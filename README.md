@@ -1,7 +1,7 @@
 # alyra-rinkeby-voting-tests
 Alyra Project - Voting smart contract tests - Project #2
 
-# Environement
+## Environnement
 
 ```
 Truffle v5.6.2 (core: 5.6.2)
@@ -11,20 +11,21 @@ Node v16.18.0
 Web3.js v1.7.4
 ```
 
-# Tests effectués
+## Tests effectués
 
 - Fonctions basique et tests de déploiements
 - Fonction getVoter
-- Fonction addVoter
-- Fonction addProposal
-- Changement de workflow (uniquement le premier et le premier changement)
+- Fonction addVoter + évènement VoterRegistered
+- Fonction addProposal + évènement ProposalRegistered
+- Changement de workflow + évènement WorkflowStatusChange (uniquement le premier et le premier changement)
 
-# Tests à terminer (manque de temps avec le pont du 1er Novembre)
+## Tests à terminer (manque de temps avec le pont du 1er Novembre)
 
 - Tous les changements de workflow
-- Fonction setVote
+- Fonction setVote + évènement Voted
+- Variable winningProposalID
 
-# Résultats attendus des tests et estimation du gas
+## Résultats attendus des tests et estimation du gas
 
 ```
 Contract: Voting
