@@ -1,4 +1,4 @@
-# alyra-rinkeby-voting-tests
+# Alyra Rinkeby Voting tests
 Alyra Project - Voting smart contract tests - Project #2
 
 ## Environnement
@@ -11,15 +11,23 @@ Node v16.18.0
 Web3.js v1.7.4
 ```
 
+## Init
+
+Start ganache and run this command
+
+```
+truffle test test/voting.test.js --network development
+```
+
 ## Tests effectués
 
-- Fonctions basique et tests de déploiements
+- Fonction basique et test de déploiement
 - Fonction getVoter
 - Fonction addVoter + évènement VoterRegistered
 - Fonction addProposal + évènement ProposalRegistered
-- Changement de workflow + évènement WorkflowStatusChange (uniquement le premier et le premier changement)
+- Changement de workflow + évènement WorkflowStatusChange (uniquement le premier statut et le premier changement)
 
-## Tests à terminer (manque de temps avec le pont du 1er Novembre)
+## Tests à effectuer
 
 - Tous les changements de workflow
 - Fonction setVote + évènement Voted
